@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demonstration of ESP32 wireless subway board for home use</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    video {
+      width: 100%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Demonstration of ESP32 wireless subway board for home use</h1>
+
+  <p>
+    This project showcases a custom-built ESP32-powered e‑ink subway display designed for home use. 
+    The device connects over Wi‑Fi, retrieves real‑time subway arrival data from the Seoul Open Data API, 
+    and displays the upcoming train information using an ultra‑low‑power e‑ink panel.
+  </p>
+
+  <p>
+    The goal of this demonstration is to show how open public transit data can be integrated with 
+    affordable microcontrollers to create practical, always‑on home information devices.
+  </p>
+
+  <h2>Video Demonstration</h2>
+  <video controls>
+    <source src="subway_sign.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <h2>About the System</h2>
+  <p>
+    The system performs periodic API calls to retrieve the latest train arrival times and updates 
+    the e‑ink display accordingly. Because e‑ink only uses power when refreshing, the overall device 
+    operates with very low energy consumption, making it ideal for continuous home use.
+  </p>
+
+  <p>
+    This webpage is provided as part of a usage‑case submission demonstrating integration with the 
+    Seoul Open Data subway arrival API.
+  </p>
+</body>
+</html>
