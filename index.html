@@ -3,79 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Demonstration of ESP32 wireless subway board for home use</title>
+  <title>Demonstration of ESP32 Wireless Subway Board for Home Use / 가정용 ESP32 무선 지하철 전광판 데모</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
+      margin: 40px;
       line-height: 1.6;
     }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.5em;
+    h1, h2 {
+      margin-top: 32px;
     }
     video {
-      width: 100%;
+      margin-top: 20px;
+      max-width: 100%;
+      border: 1px solid #ccc;
       border-radius: 8px;
-      margin: 20px 0;
     }
   </style>
 </head>
 <body>
-  <h1>Demonstration of ESP32 wireless subway board for home use</h1>
+  <h1>Demonstration of ESP32 Wireless Subway Board for Home Use / 가정용 ESP32 무선 지하철 전광판 데모</h1>
+  <p>This page demonstrates a custom-built wireless subway display using an ESP32 and an E‑Ink screen. This device fetches live subway arrival information and presents it in a low‑power, always‑on format suitable for home use.</p>
+  <p>이 페이지는 ESP32와 E‑Ink 스크린을 사용하여 제작한 무선 지하철 정보 전광판을 시연합니다. 이 장치는 실시간 지하철 도착 정보를 가져와 가정에서 항상 켜 둘 수 있는 저전력 형태로 표시합니다.</p>
 
-  <p>
-    This project showcases a custom-built ESP32-powered e‑ink subway display designed for home use. 
-    The device connects over Wi‑Fi, retrieves real‑time subway arrival data from the Seoul Open Data API, 
-    and displays the upcoming train information using an ultra‑low‑power e‑ink panel.
-  </p>
-  <p class="kr">
-    이 프로젝트는 가정용으로 제작된 ESP32 기반 전자잉크(E‑Ink) 지하철 안내판을 소개합니다.<br>
-    이 장치는 Wi‑Fi를 통해 서울 열린데이터 광장의 지하철 실시간 도착 정보를 받아오며,<br>
-    초저전력 전자잉크 패널을 사용하여 다음 열차 도착 정보를 표시합니다.
-  </p>
-  <p>
-  </p>
+  <h2>Video Demonstration / 시연 영상</h2>
+  <p>Below is a demonstration video of the display operating with real-time subway data.</p>
+  <p>아래 영상은 실제 지하철 데이터를 기반으로 작동하는 전광판의 시연입니다.</p>
 
-  <p>
-    The goal of this demonstration is to show how open public transit data can be integrated with 
-    affordable microcontrollers to create practical, always‑on home information devices.
-  </p>
-  <p class="kr">
-    이 데모의 목적은 대중교통 오픈 데이터를 저비용 마이크로컨트롤러와 결합하여<br>
-    항상 켜두고 사용할 수 있는 실용적인 가정용 정보기기를 만드는 방법을 보여주는 것입니다.
-  </p>
-  <p>
-  </p>
-
-  <h2>Video Demonstration</h2>
   <video controls>
     <source src="subway_sign.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
-  <h2>About the System</h2>
-  <p>
-    The system performs periodic API calls to retrieve the latest train arrival times and updates 
-    the e‑ink display accordingly. Because e‑ink only uses power when refreshing, the overall device 
-    operates with very low energy consumption, making it ideal for continuous home use.
-  </p>
-  <p class="kr">
-    이 시스템은 일정 주기로 API를 호출하여 최신 열차 도착 정보를 받아 전자잉크 화면을 업데이트합니다.<br>
-    전자잉크는 화면을 새로 고칠 때만 전력을 사용하므로 전체 장치는 매우 낮은 전력으로 동작하며,<br>
-    상시 가동하기에 적합합니다.
-  </p>
-  <p>
-  </p>
+  <h2>Description / 설명</h2>
+  <p>This project uses the Seoul Open Data API to pull arrival times for specific subway stations. The ESP32 updates the E‑Ink panel periodically while keeping power usage minimal. The device is designed to be placed in a home environment as a passive information display.</p>
+  <p>이 프로젝트는 서울 열린데이터광장 API를 이용하여 특정 지하철역의 도착 시간을 가져옵니다. ESP32는 저전력을 유지하면서 주기적으로 E‑Ink 패널을 업데이트합니다. 이 장치는 가정 환경에서 정보 표시용으로 배치할 수 있도록 설계되었습니다.</p>
 
-  <p>
-    This webpage is provided as part of a usage‑case submission demonstrating integration with the 
-    Seoul Open Data subway arrival API.
-  </p>
-  <p class="kr">
-    이 웹페이지는 서울 열린데이터 광장의 지하철 도착 정보 API 활용사례 제출을 위해 제작된 데모 페이지입니다.
-  </p>
-  </p>
+  <h2>Technical Details / 기술 정보</h2>
+  <p>The system is implemented using an ESP32 microcontroller, a Waveshare E‑Ink display, and custom firmware developed in C++ (PlatformIO). Network communication is handled over Wi‑Fi, and data is retrieved via REST API calls.</p>
+  <p>이 시스템은 ESP32 마이크로컨트롤러, Waveshare E‑Ink 디스플레이, C++(PlatformIO)로 개발된 커스텀 펌웨어로 구성되어 있습니다. 네트워크 통신은 Wi‑Fi를 통해 이루어지며, 데이터는 REST API 호출로 가져옵니다.</p>
+
 </body>
 </html>
