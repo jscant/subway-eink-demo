@@ -16,6 +16,7 @@
     }
     video {
       margin-top: 20px;
+      width: 600px; /* reduced width */
       max-width: 100%;
       border: 1px solid #ccc;
       border-radius: 8px;
@@ -24,8 +25,8 @@
 </head>
 <body>
   <h1>Demonstration of ESP32 Wireless Subway Board for Home Use / 가정용 ESP32 무선 지하철 전광판 데모</h1>
-  <p>This page demonstrates a custom-built wireless subway display using an ESP32 and an E‑Ink screen. This device fetches live subway arrival information and presents it in a low‑power, always‑on format suitable for home use.</p>
-  <p>이 페이지는 ESP32와 E‑Ink 스크린을 사용하여 제작한 무선 지하철 정보 전광판을 시연합니다. 이 장치는 실시간 지하철 도착 정보를 가져와 가정에서 항상 켜 둘 수 있는 저전력 형태로 표시합니다.</p>
+  <p>This page demonstrates a custom-built wireless subway display using an ESP32 and an E-Ink screen. This device fetches live subway arrival information and presents it in a low-power, always-on format suitable for home use.</p>
+  <p>이 페이지는 ESP32와 E-Ink 스크린을 사용하여 제작한 무선 지하철 정보 전광판을 시연합니다. 이 장치는 실시간 지하철 도착 정보를 가져와 가정에서 항상 켜 둘 수 있는 저전력 형태로 표시합니다.</p>
 
   <h2>Video Demonstration / 시연 영상</h2>
   <p>Below is a demonstration video of the display operating with real-time subway data.</p>
@@ -37,12 +38,12 @@
   </video>
 
   <h2>Description / 설명</h2>
-  <p>This project uses the Seoul Open Data API to pull arrival times for specific subway stations. The ESP32 updates the E‑Ink panel periodically while keeping power usage minimal. The device is designed to be placed in a home environment as a passive information display.</p>
-  <p>이 프로젝트는 서울 열린데이터광장 API를 이용하여 특정 지하철역의 도착 시간을 가져옵니다. ESP32는 저전력을 유지하면서 주기적으로 E‑Ink 패널을 업데이트합니다. 이 장치는 가정 환경에서 정보 표시용으로 배치할 수 있도록 설계되었습니다.</p>
+  <p>This project uses the Seoul Open Data API to pull arrival times for specific subway stations. The ESP32 updates the E-Ink panel periodically while keeping power usage minimal. The device is designed to be placed in a home environment as a passive information display.</p>
+  <p>이 프로젝트는 서울 열린데이터광장 API를 이용하여 특정 지하철역의 도착 시간을 가져옵니다. ESP32는 저전력을 유지하면서 주기적으로 E-Ink 패널을 업데이트합니다. 이 장치는 가정 환경에서 정보 표시용으로 배치할 수 있도록 설계되었습니다.</p>
 
   <h2>Technical Details / 기술 정보</h2>
-  <p>The system is implemented using an ESP32 microcontroller, a Waveshare E‑Ink display, and custom firmware developed in C++ (PlatformIO). Network communication is handled over Wi‑Fi, and data is retrieved via REST API calls.</p>
-  <p>이 시스템은 ESP32 마이크로컨트롤러, Waveshare E‑Ink 디스플레이, C++(PlatformIO)로 개발된 커스텀 펌웨어로 구성되어 있습니다. 네트워크 통신은 Wi‑Fi를 통해 이루어지며, 데이터는 REST API 호출로 가져옵니다.</p>
+  <p>The system is implemented using an ESP32 microcontroller, a Waveshare E-Ink display, and custom firmware developed in C++ (PlatformIO). Network communication is handled over Wi-Fi, and data is retrieved via REST API calls.</p>
+  <p>이 시스템은 ESP32 마이크로컨트롤러, Waveshare E-Ink 디스플레이, C++(PlatformIO)로 개발된 커스텀 펌웨어로 구성되어 있습니다. 네트워크 통신은 Wi-Fi를 통해 이루어지며, 데이터는 REST API 호출로 가져옵니다.</p>
 
 </body>
 </html>
